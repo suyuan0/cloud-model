@@ -1,28 +1,31 @@
-from flask import Flask, request, jsonify
-import tensorflow as tf
-from socks import method
-from tensorflow.keras.preprocessing import image
-import numpy as np
 import os
+import torch
+from flask import Flask, request, jsonify
+from torchvision import transforms
+from PIL import Image
+from torchvision import models
+
+# 加载模型
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+model = models.mobilenet_v2()
+model.classifier[1] = torch.nn.Linear(model.last_channel, 11)
+model.load_state_dict(torch.load("./models/cloud_recognition_model.pth", weights_only=True))
+model.eval()
+model.to(device)
+
+# 定义数据预处理
+transform = transforms.Compose([
+    transforms.Resize((224, 224)),
+    transforms.ToTensor(),
+    transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
+])
 
 # 初始化 Flask 应用
 app = Flask(__name__)
 
-# 加载训练好的模型
-model = tf.keras.models.load_model('model.h5')
-
 # 定义类别名称
-class_names = ["cirrus", "cirrostratus", "cirrocumulus", "altocumulus", "altostratus", "cumulus", "cumulonimbus",
-               "nimbostratus", "stratocumulus", "stratus", "contrail"]
-
-
-# 预处理上传的图片
-def preprocess_image(img_path):
-    img = image.load_img(img_path, target_size=(400, 400))  # 图片大小调整为 400x400
-    image_array = image.img_to_array(img)
-    image_array = np.expand_dims(image_array, axis=0)  # 添加批次维度
-    image_array /= 255.0  # 像素值归一化
-    return image_array
+classes = ["cirrus", "cirrostratus", "cirrocumulus", "altocumulus", "altostratus", "cumulus", "cumulonimbus",
+           "nimbostratus", "stratocumulus", "stratus", "contrail"]
 
 
 # 创建图片上传接口
@@ -30,23 +33,29 @@ def preprocess_image(img_path):
 def predict():
     # 确保文件存在
     if 'file' not in request.files:
-        return jsonify({'error': "No file uploaded"})
+        return jsonify({'error': 'No file part'}), 400
 
     file = request.files['file']
 
-    # 将图片保存到本地
-    img_path = 'uploads/' + file.filename
-    file.save(img_path)
+    if file.filename == '':
+        return jsonify({'error': 'No selected file'}), 400
 
-    # 预处理图片
-    img = preprocess_image(img_path)
+    try:
+        # 打开图片并进行预处理
+        image = Image.open(file.stream).convert("RGB")
+        image = transform(image).unsqueeze(0).to(device)
 
-    # 进行预测
-    predictions = model.predict(img)
-    predicted_class = class_names[np.argmax(predictions[0])]
+        # 进行预测
+        with torch.no_grad():
+            outputs = model(image)
+            _, predicted = torch.max(outputs, 1)
+        print(predicted)
+        print(outputs)
+        # 返回结果
+        return jsonify({'class': classes[predicted.item()]})
 
-    # 返回结果
-    return jsonify({'predicted_class': predicted_class})
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
 
 
 if __name__ == "__main__":

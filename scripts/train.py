@@ -7,12 +7,19 @@ from sklearn.model_selection import train_test_split
 from torchvision.models import MobileNet_V2_Weights
 from tabulate import tabulate
 import os
+import logging
+
+logging.basicConfig(
+    filename="training.log",
+    level=logging.INFO,
+    format='%(message)s'
+)
 
 # 图片大小和批量大小
 image_size = 224
 batch_size = 32
 num_classes = 11  # 你的云分类任务有 3 个类别：卷云、卷层云、卷积云、高积云、高层云、积云、积雨云、薄层云、层积云、层云、尾迹
-epochs = 10
+epochs = 1
 learning_rate = 0.001
 
 # 数据集路径
@@ -90,6 +97,7 @@ def train_model(model, train_loader, val_loader, criterion, optimizer, epochs):
             # 计算并显示进度百分比，保留两位小数
             progress = (batch_idx + 1) / total_batches * 100
             print(f"Epoch [{epoch + 1}/{epochs}], Batch [{batch_idx + 1}/{total_batches}], Progress: {progress:.2f}%")
+            logging.info(f"Epoch [{epoch + 1}/{epochs}], Batch [{batch_idx + 1}/{total_batches}], Progress: {progress:.2f}%")
 
         train_loss = running_loss / len(train_loader)
         train_acc = 100 * correct / total
@@ -120,10 +128,12 @@ def train_model(model, train_loader, val_loader, criterion, optimizer, epochs):
         print("\nResults after Epoch", epoch + 1)
         headers = ["Epoch", "Train Loss", "Train Accuracy", "Validation Loss", "Validation Accuracy"]
         print(tabulate([results[-1]], headers=headers, tablefmt="grid"))
+        logging.info(tabulate([results[-1]], headers=headers, tablefmt="grid"))
 
     # 全部训练结束后，打印所有轮次的结果
     print("\nFinal Results after All Epochs:")
     print(tabulate(results, headers=headers, tablefmt="grid"))
+    logging.info(tabulate(results, headers=headers, tablefmt="grid"))
 
 
 # 开始训练
