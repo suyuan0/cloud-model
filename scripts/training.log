@@ -1,95 +1,718 @@
-2024-09-20 18:19:27,298:grid
-2024-09-20 18:19:27,299:+---------+--------------+------------------+-------------------+-----------------------+
-| Epoch   |   Train Loss | Train Accuracy   |   Validation Loss | Validation Accuracy   |
-+=========+==============+==================+===================+=======================+
-| 1/1     |         2.06 | 29.74%           |              1.75 | 44.01%                |
-+---------+--------------+------------------+-------------------+-----------------------+
-+---------+--------------+------------------+-------------------+-----------------------+
-| Epoch   |   Train Loss | Train Accuracy   |   Validation Loss | Validation Accuracy   |
-+=========+==============+==================+===================+=======================+
-| 1/1     |         2.06 | 30.97%           |              1.79 | 39.49%                |
-+---------+--------------+------------------+-------------------+-----------------------+
-+---------+--------------+------------------+-------------------+-----------------------+
-| Epoch   |   Train Loss | Train Accuracy   |   Validation Loss | Validation Accuracy   |
-+=========+==============+==================+===================+=======================+
-| 1/1     |         2.06 | 30.97%           |              1.79 | 39.49%                |
-+---------+--------------+------------------+-------------------+-----------------------+
 Epoch [1/1], Batch [1/64], Progress: 1.56%
 Epoch [1/1], Batch [2/64], Progress: 3.12%
 Epoch [1/1], Batch [3/64], Progress: 4.69%
 Epoch [1/1], Batch [4/64], Progress: 6.25%
 Epoch [1/1], Batch [5/64], Progress: 7.81%
-Epoch [1/1], Batch [6/64], Progress: 9.38%
-Epoch [1/1], Batch [7/64], Progress: 10.94%
-Epoch [1/1], Batch [8/64], Progress: 12.50%
-Epoch [1/1], Batch [9/64], Progress: 14.06%
-Epoch [1/1], Batch [10/64], Progress: 15.62%
-Epoch [1/1], Batch [11/64], Progress: 17.19%
-Epoch [1/1], Batch [12/64], Progress: 18.75%
-Epoch [1/1], Batch [13/64], Progress: 20.31%
-Epoch [1/1], Batch [14/64], Progress: 21.88%
-Epoch [1/1], Batch [15/64], Progress: 23.44%
-Epoch [1/1], Batch [16/64], Progress: 25.00%
-Epoch [1/1], Batch [17/64], Progress: 26.56%
-Epoch [1/1], Batch [18/64], Progress: 28.12%
-Epoch [1/1], Batch [19/64], Progress: 29.69%
-Epoch [1/1], Batch [20/64], Progress: 31.25%
-Epoch [1/1], Batch [21/64], Progress: 32.81%
-Epoch [1/1], Batch [22/64], Progress: 34.38%
-Epoch [1/1], Batch [23/64], Progress: 35.94%
-Epoch [1/1], Batch [24/64], Progress: 37.50%
-Epoch [1/1], Batch [25/64], Progress: 39.06%
-Epoch [1/1], Batch [26/64], Progress: 40.62%
-Epoch [1/1], Batch [27/64], Progress: 42.19%
-Epoch [1/1], Batch [28/64], Progress: 43.75%
-Epoch [1/1], Batch [29/64], Progress: 45.31%
-Epoch [1/1], Batch [30/64], Progress: 46.88%
-Epoch [1/1], Batch [31/64], Progress: 48.44%
-Epoch [1/1], Batch [32/64], Progress: 50.00%
-Epoch [1/1], Batch [33/64], Progress: 51.56%
-Epoch [1/1], Batch [34/64], Progress: 53.12%
-Epoch [1/1], Batch [35/64], Progress: 54.69%
-Epoch [1/1], Batch [36/64], Progress: 56.25%
-Epoch [1/1], Batch [37/64], Progress: 57.81%
-Epoch [1/1], Batch [38/64], Progress: 59.38%
-Epoch [1/1], Batch [39/64], Progress: 60.94%
-Epoch [1/1], Batch [40/64], Progress: 62.50%
-Epoch [1/1], Batch [41/64], Progress: 64.06%
-Epoch [1/1], Batch [42/64], Progress: 65.62%
-Epoch [1/1], Batch [43/64], Progress: 67.19%
-Epoch [1/1], Batch [44/64], Progress: 68.75%
-Epoch [1/1], Batch [45/64], Progress: 70.31%
-Epoch [1/1], Batch [46/64], Progress: 71.88%
-Epoch [1/1], Batch [47/64], Progress: 73.44%
-Epoch [1/1], Batch [48/64], Progress: 75.00%
-Epoch [1/1], Batch [49/64], Progress: 76.56%
-Epoch [1/1], Batch [50/64], Progress: 78.12%
-Epoch [1/1], Batch [51/64], Progress: 79.69%
-Epoch [1/1], Batch [52/64], Progress: 81.25%
-Epoch [1/1], Batch [53/64], Progress: 82.81%
-Epoch [1/1], Batch [54/64], Progress: 84.38%
-Epoch [1/1], Batch [55/64], Progress: 85.94%
-Epoch [1/1], Batch [56/64], Progress: 87.50%
-Epoch [1/1], Batch [57/64], Progress: 89.06%
-Epoch [1/1], Batch [58/64], Progress: 90.62%
-Epoch [1/1], Batch [59/64], Progress: 92.19%
-Epoch [1/1], Batch [60/64], Progress: 93.75%
-Epoch [1/1], Batch [61/64], Progress: 95.31%
-Epoch [1/1], Batch [62/64], Progress: 96.88%
-Epoch [1/1], Batch [63/64], Progress: 98.44%
-Epoch [1/1], Batch [64/64], Progress: 100.00%
+Epoch [1/10], Batch [1/64], Progress: 1.56%
+Epoch [1/10], Batch [2/64], Progress: 3.12%
+Epoch [1/10], Batch [3/64], Progress: 4.69%
+Epoch [1/10], Batch [4/64], Progress: 6.25%
+Epoch [1/10], Batch [5/64], Progress: 7.81%
+Epoch [1/10], Batch [6/64], Progress: 9.38%
+Epoch [1/10], Batch [7/64], Progress: 10.94%
+Epoch [1/10], Batch [8/64], Progress: 12.50%
+Epoch [1/10], Batch [9/64], Progress: 14.06%
+Epoch [1/10], Batch [10/64], Progress: 15.62%
+Epoch [1/10], Batch [11/64], Progress: 17.19%
+Epoch [1/10], Batch [12/64], Progress: 18.75%
+Epoch [1/10], Batch [13/64], Progress: 20.31%
+Epoch [1/10], Batch [14/64], Progress: 21.88%
+Epoch [1/10], Batch [15/64], Progress: 23.44%
+Epoch [1/10], Batch [16/64], Progress: 25.00%
+Epoch [1/10], Batch [17/64], Progress: 26.56%
+Epoch [1/10], Batch [18/64], Progress: 28.12%
+Epoch [1/10], Batch [19/64], Progress: 29.69%
+Epoch [1/10], Batch [20/64], Progress: 31.25%
+Epoch [1/10], Batch [21/64], Progress: 32.81%
+Epoch [1/10], Batch [22/64], Progress: 34.38%
+Epoch [1/10], Batch [23/64], Progress: 35.94%
+Epoch [1/10], Batch [24/64], Progress: 37.50%
+Epoch [1/10], Batch [25/64], Progress: 39.06%
+Epoch [1/10], Batch [26/64], Progress: 40.62%
+Epoch [1/10], Batch [27/64], Progress: 42.19%
+Epoch [1/10], Batch [28/64], Progress: 43.75%
+Epoch [1/10], Batch [29/64], Progress: 45.31%
+Epoch [1/10], Batch [30/64], Progress: 46.88%
+Epoch [1/10], Batch [31/64], Progress: 48.44%
+Epoch [1/10], Batch [32/64], Progress: 50.00%
+Epoch [1/10], Batch [33/64], Progress: 51.56%
+Epoch [1/10], Batch [34/64], Progress: 53.12%
+Epoch [1/10], Batch [35/64], Progress: 54.69%
+Epoch [1/10], Batch [36/64], Progress: 56.25%
+Epoch [1/10], Batch [37/64], Progress: 57.81%
+Epoch [1/10], Batch [38/64], Progress: 59.38%
+Epoch [1/10], Batch [39/64], Progress: 60.94%
+Epoch [1/10], Batch [40/64], Progress: 62.50%
+Epoch [1/10], Batch [41/64], Progress: 64.06%
+Epoch [1/10], Batch [42/64], Progress: 65.62%
+Epoch [1/10], Batch [43/64], Progress: 67.19%
+Epoch [1/10], Batch [44/64], Progress: 68.75%
+Epoch [1/10], Batch [45/64], Progress: 70.31%
+Epoch [1/10], Batch [46/64], Progress: 71.88%
+Epoch [1/10], Batch [47/64], Progress: 73.44%
+Epoch [1/10], Batch [48/64], Progress: 75.00%
+Epoch [1/10], Batch [49/64], Progress: 76.56%
+Epoch [1/10], Batch [50/64], Progress: 78.12%
+Epoch [1/10], Batch [51/64], Progress: 79.69%
+Epoch [1/10], Batch [52/64], Progress: 81.25%
+Epoch [1/10], Batch [53/64], Progress: 82.81%
+Epoch [1/10], Batch [54/64], Progress: 84.38%
+Epoch [1/10], Batch [55/64], Progress: 85.94%
+Epoch [1/10], Batch [56/64], Progress: 87.50%
+Epoch [1/10], Batch [57/64], Progress: 89.06%
+Epoch [1/10], Batch [58/64], Progress: 90.62%
+Epoch [1/10], Batch [59/64], Progress: 92.19%
+Epoch [1/10], Batch [60/64], Progress: 93.75%
+Epoch [1/10], Batch [61/64], Progress: 95.31%
+Epoch [1/10], Batch [62/64], Progress: 96.88%
+Epoch [1/10], Batch [63/64], Progress: 98.44%
+Epoch [1/10], Batch [64/64], Progress: 100.00%
 +---------+--------------+------------------+-------------------+-----------------------+
 | Epoch   |   Train Loss | Train Accuracy   |   Validation Loss | Validation Accuracy   |
 +=========+==============+==================+===================+=======================+
-| 1/1     |         2.05 | 30.24%           |              1.76 | 41.45%                |
+| 1/10    |         2.06 | 29.30%           |              1.79 | 39.49%                |
++---------+--------------+------------------+-------------------+-----------------------+
+Epoch [2/10], Batch [1/64], Progress: 1.56%
+Epoch [2/10], Batch [2/64], Progress: 3.12%
+Epoch [2/10], Batch [3/64], Progress: 4.69%
+Epoch [2/10], Batch [4/64], Progress: 6.25%
+Epoch [2/10], Batch [5/64], Progress: 7.81%
+Epoch [2/10], Batch [6/64], Progress: 9.38%
+Epoch [2/10], Batch [7/64], Progress: 10.94%
+Epoch [2/10], Batch [8/64], Progress: 12.50%
+Epoch [2/10], Batch [9/64], Progress: 14.06%
+Epoch [2/10], Batch [10/64], Progress: 15.62%
+Epoch [2/10], Batch [11/64], Progress: 17.19%
+Epoch [2/10], Batch [12/64], Progress: 18.75%
+Epoch [2/10], Batch [13/64], Progress: 20.31%
+Epoch [2/10], Batch [14/64], Progress: 21.88%
+Epoch [2/10], Batch [15/64], Progress: 23.44%
+Epoch [2/10], Batch [16/64], Progress: 25.00%
+Epoch [2/10], Batch [17/64], Progress: 26.56%
+Epoch [2/10], Batch [18/64], Progress: 28.12%
+Epoch [2/10], Batch [19/64], Progress: 29.69%
+Epoch [2/10], Batch [20/64], Progress: 31.25%
+Epoch [2/10], Batch [21/64], Progress: 32.81%
+Epoch [2/10], Batch [22/64], Progress: 34.38%
+Epoch [2/10], Batch [23/64], Progress: 35.94%
+Epoch [2/10], Batch [24/64], Progress: 37.50%
+Epoch [2/10], Batch [25/64], Progress: 39.06%
+Epoch [2/10], Batch [26/64], Progress: 40.62%
+Epoch [2/10], Batch [27/64], Progress: 42.19%
+Epoch [2/10], Batch [28/64], Progress: 43.75%
+Epoch [2/10], Batch [29/64], Progress: 45.31%
+Epoch [2/10], Batch [30/64], Progress: 46.88%
+Epoch [2/10], Batch [31/64], Progress: 48.44%
+Epoch [2/10], Batch [32/64], Progress: 50.00%
+Epoch [2/10], Batch [33/64], Progress: 51.56%
+Epoch [2/10], Batch [34/64], Progress: 53.12%
+Epoch [2/10], Batch [35/64], Progress: 54.69%
+Epoch [2/10], Batch [36/64], Progress: 56.25%
+Epoch [2/10], Batch [37/64], Progress: 57.81%
+Epoch [2/10], Batch [38/64], Progress: 59.38%
+Epoch [2/10], Batch [39/64], Progress: 60.94%
+Epoch [2/10], Batch [40/64], Progress: 62.50%
+Epoch [2/10], Batch [41/64], Progress: 64.06%
+Epoch [2/10], Batch [42/64], Progress: 65.62%
+Epoch [2/10], Batch [43/64], Progress: 67.19%
+Epoch [2/10], Batch [44/64], Progress: 68.75%
+Epoch [2/10], Batch [45/64], Progress: 70.31%
+Epoch [2/10], Batch [46/64], Progress: 71.88%
+Epoch [2/10], Batch [47/64], Progress: 73.44%
+Epoch [2/10], Batch [48/64], Progress: 75.00%
+Epoch [2/10], Batch [49/64], Progress: 76.56%
+Epoch [2/10], Batch [50/64], Progress: 78.12%
+Epoch [2/10], Batch [51/64], Progress: 79.69%
+Epoch [2/10], Batch [52/64], Progress: 81.25%
+Epoch [2/10], Batch [53/64], Progress: 82.81%
+Epoch [2/10], Batch [54/64], Progress: 84.38%
+Epoch [2/10], Batch [55/64], Progress: 85.94%
+Epoch [2/10], Batch [56/64], Progress: 87.50%
+Epoch [2/10], Batch [57/64], Progress: 89.06%
+Epoch [2/10], Batch [58/64], Progress: 90.62%
+Epoch [2/10], Batch [59/64], Progress: 92.19%
+Epoch [2/10], Batch [60/64], Progress: 93.75%
+Epoch [2/10], Batch [61/64], Progress: 95.31%
+Epoch [2/10], Batch [62/64], Progress: 96.88%
+Epoch [2/10], Batch [63/64], Progress: 98.44%
+Epoch [2/10], Batch [64/64], Progress: 100.00%
++---------+--------------+------------------+-------------------+-----------------------+
+| Epoch   |   Train Loss | Train Accuracy   |   Validation Loss | Validation Accuracy   |
++=========+==============+==================+===================+=======================+
+| 2/10    |         1.68 | 42.13%           |              1.64 | 43.22%                |
++---------+--------------+------------------+-------------------+-----------------------+
+Epoch [3/10], Batch [1/64], Progress: 1.56%
+Epoch [3/10], Batch [2/64], Progress: 3.12%
+Epoch [3/10], Batch [3/64], Progress: 4.69%
+Epoch [3/10], Batch [4/64], Progress: 6.25%
+Epoch [3/10], Batch [5/64], Progress: 7.81%
+Epoch [3/10], Batch [6/64], Progress: 9.38%
+Epoch [3/10], Batch [7/64], Progress: 10.94%
+Epoch [3/10], Batch [8/64], Progress: 12.50%
+Epoch [3/10], Batch [9/64], Progress: 14.06%
+Epoch [3/10], Batch [10/64], Progress: 15.62%
+Epoch [3/10], Batch [11/64], Progress: 17.19%
+Epoch [3/10], Batch [12/64], Progress: 18.75%
+Epoch [3/10], Batch [13/64], Progress: 20.31%
+Epoch [3/10], Batch [14/64], Progress: 21.88%
+Epoch [3/10], Batch [15/64], Progress: 23.44%
+Epoch [3/10], Batch [16/64], Progress: 25.00%
+Epoch [3/10], Batch [17/64], Progress: 26.56%
+Epoch [3/10], Batch [18/64], Progress: 28.12%
+Epoch [3/10], Batch [19/64], Progress: 29.69%
+Epoch [3/10], Batch [20/64], Progress: 31.25%
+Epoch [3/10], Batch [21/64], Progress: 32.81%
+Epoch [3/10], Batch [22/64], Progress: 34.38%
+Epoch [3/10], Batch [23/64], Progress: 35.94%
+Epoch [3/10], Batch [24/64], Progress: 37.50%
+Epoch [3/10], Batch [25/64], Progress: 39.06%
+Epoch [3/10], Batch [26/64], Progress: 40.62%
+Epoch [3/10], Batch [27/64], Progress: 42.19%
+Epoch [3/10], Batch [28/64], Progress: 43.75%
+Epoch [3/10], Batch [29/64], Progress: 45.31%
+Epoch [3/10], Batch [30/64], Progress: 46.88%
+Epoch [3/10], Batch [31/64], Progress: 48.44%
+Epoch [3/10], Batch [32/64], Progress: 50.00%
+Epoch [3/10], Batch [33/64], Progress: 51.56%
+Epoch [3/10], Batch [34/64], Progress: 53.12%
+Epoch [3/10], Batch [35/64], Progress: 54.69%
+Epoch [3/10], Batch [36/64], Progress: 56.25%
+Epoch [3/10], Batch [37/64], Progress: 57.81%
+Epoch [3/10], Batch [38/64], Progress: 59.38%
+Epoch [3/10], Batch [39/64], Progress: 60.94%
+Epoch [3/10], Batch [40/64], Progress: 62.50%
+Epoch [3/10], Batch [41/64], Progress: 64.06%
+Epoch [3/10], Batch [42/64], Progress: 65.62%
+Epoch [3/10], Batch [43/64], Progress: 67.19%
+Epoch [3/10], Batch [44/64], Progress: 68.75%
+Epoch [3/10], Batch [45/64], Progress: 70.31%
+Epoch [3/10], Batch [46/64], Progress: 71.88%
+Epoch [3/10], Batch [47/64], Progress: 73.44%
+Epoch [3/10], Batch [48/64], Progress: 75.00%
+Epoch [3/10], Batch [49/64], Progress: 76.56%
+Epoch [3/10], Batch [50/64], Progress: 78.12%
+Epoch [3/10], Batch [51/64], Progress: 79.69%
+Epoch [3/10], Batch [52/64], Progress: 81.25%
+Epoch [3/10], Batch [53/64], Progress: 82.81%
+Epoch [3/10], Batch [54/64], Progress: 84.38%
+Epoch [3/10], Batch [55/64], Progress: 85.94%
+Epoch [3/10], Batch [56/64], Progress: 87.50%
+Epoch [3/10], Batch [57/64], Progress: 89.06%
+Epoch [3/10], Batch [58/64], Progress: 90.62%
+Epoch [3/10], Batch [59/64], Progress: 92.19%
+Epoch [3/10], Batch [60/64], Progress: 93.75%
+Epoch [3/10], Batch [61/64], Progress: 95.31%
+Epoch [3/10], Batch [62/64], Progress: 96.88%
+Epoch [3/10], Batch [63/64], Progress: 98.44%
+Epoch [3/10], Batch [64/64], Progress: 100.00%
++---------+--------------+------------------+-------------------+-----------------------+
+| Epoch   |   Train Loss | Train Accuracy   |   Validation Loss | Validation Accuracy   |
++=========+==============+==================+===================+=======================+
+| 3/10    |         1.55 | 46.61%           |              1.61 | 42.04%                |
++---------+--------------+------------------+-------------------+-----------------------+
+Epoch [4/10], Batch [1/64], Progress: 1.56%
+Epoch [4/10], Batch [2/64], Progress: 3.12%
+Epoch [4/10], Batch [3/64], Progress: 4.69%
+Epoch [4/10], Batch [4/64], Progress: 6.25%
+Epoch [4/10], Batch [5/64], Progress: 7.81%
+Epoch [4/10], Batch [6/64], Progress: 9.38%
+Epoch [4/10], Batch [7/64], Progress: 10.94%
+Epoch [4/10], Batch [8/64], Progress: 12.50%
+Epoch [4/10], Batch [9/64], Progress: 14.06%
+Epoch [4/10], Batch [10/64], Progress: 15.62%
+Epoch [4/10], Batch [11/64], Progress: 17.19%
+Epoch [4/10], Batch [12/64], Progress: 18.75%
+Epoch [4/10], Batch [13/64], Progress: 20.31%
+Epoch [4/10], Batch [14/64], Progress: 21.88%
+Epoch [4/10], Batch [15/64], Progress: 23.44%
+Epoch [4/10], Batch [16/64], Progress: 25.00%
+Epoch [4/10], Batch [17/64], Progress: 26.56%
+Epoch [4/10], Batch [18/64], Progress: 28.12%
+Epoch [4/10], Batch [19/64], Progress: 29.69%
+Epoch [4/10], Batch [20/64], Progress: 31.25%
+Epoch [4/10], Batch [21/64], Progress: 32.81%
+Epoch [4/10], Batch [22/64], Progress: 34.38%
+Epoch [4/10], Batch [23/64], Progress: 35.94%
+Epoch [4/10], Batch [24/64], Progress: 37.50%
+Epoch [4/10], Batch [25/64], Progress: 39.06%
+Epoch [4/10], Batch [26/64], Progress: 40.62%
+Epoch [4/10], Batch [27/64], Progress: 42.19%
+Epoch [4/10], Batch [28/64], Progress: 43.75%
+Epoch [4/10], Batch [29/64], Progress: 45.31%
+Epoch [4/10], Batch [30/64], Progress: 46.88%
+Epoch [4/10], Batch [31/64], Progress: 48.44%
+Epoch [4/10], Batch [32/64], Progress: 50.00%
+Epoch [4/10], Batch [33/64], Progress: 51.56%
+Epoch [4/10], Batch [34/64], Progress: 53.12%
+Epoch [4/10], Batch [35/64], Progress: 54.69%
+Epoch [4/10], Batch [36/64], Progress: 56.25%
+Epoch [4/10], Batch [37/64], Progress: 57.81%
+Epoch [4/10], Batch [38/64], Progress: 59.38%
+Epoch [4/10], Batch [39/64], Progress: 60.94%
+Epoch [4/10], Batch [40/64], Progress: 62.50%
+Epoch [4/10], Batch [41/64], Progress: 64.06%
+Epoch [4/10], Batch [42/64], Progress: 65.62%
+Epoch [4/10], Batch [43/64], Progress: 67.19%
+Epoch [4/10], Batch [44/64], Progress: 68.75%
+Epoch [4/10], Batch [45/64], Progress: 70.31%
+Epoch [4/10], Batch [46/64], Progress: 71.88%
+Epoch [4/10], Batch [47/64], Progress: 73.44%
+Epoch [4/10], Batch [48/64], Progress: 75.00%
+Epoch [4/10], Batch [49/64], Progress: 76.56%
+Epoch [4/10], Batch [50/64], Progress: 78.12%
+Epoch [4/10], Batch [51/64], Progress: 79.69%
+Epoch [4/10], Batch [52/64], Progress: 81.25%
+Epoch [4/10], Batch [53/64], Progress: 82.81%
+Epoch [4/10], Batch [54/64], Progress: 84.38%
+Epoch [4/10], Batch [55/64], Progress: 85.94%
+Epoch [4/10], Batch [56/64], Progress: 87.50%
+Epoch [4/10], Batch [57/64], Progress: 89.06%
+Epoch [4/10], Batch [58/64], Progress: 90.62%
+Epoch [4/10], Batch [59/64], Progress: 92.19%
+Epoch [4/10], Batch [60/64], Progress: 93.75%
+Epoch [4/10], Batch [61/64], Progress: 95.31%
+Epoch [4/10], Batch [62/64], Progress: 96.88%
+Epoch [4/10], Batch [63/64], Progress: 98.44%
+Epoch [4/10], Batch [64/64], Progress: 100.00%
++---------+--------------+------------------+-------------------+-----------------------+
+| Epoch   |   Train Loss | Train Accuracy   |   Validation Loss | Validation Accuracy   |
++=========+==============+==================+===================+=======================+
+| 4/10    |         1.47 | 48.33%           |              1.55 | 48.33%                |
++---------+--------------+------------------+-------------------+-----------------------+
+Epoch [5/10], Batch [1/64], Progress: 1.56%
+Epoch [5/10], Batch [2/64], Progress: 3.12%
+Epoch [5/10], Batch [3/64], Progress: 4.69%
+Epoch [5/10], Batch [4/64], Progress: 6.25%
+Epoch [5/10], Batch [5/64], Progress: 7.81%
+Epoch [5/10], Batch [6/64], Progress: 9.38%
+Epoch [5/10], Batch [7/64], Progress: 10.94%
+Epoch [5/10], Batch [8/64], Progress: 12.50%
+Epoch [5/10], Batch [9/64], Progress: 14.06%
+Epoch [5/10], Batch [10/64], Progress: 15.62%
+Epoch [5/10], Batch [11/64], Progress: 17.19%
+Epoch [5/10], Batch [12/64], Progress: 18.75%
+Epoch [5/10], Batch [13/64], Progress: 20.31%
+Epoch [5/10], Batch [14/64], Progress: 21.88%
+Epoch [5/10], Batch [15/64], Progress: 23.44%
+Epoch [5/10], Batch [16/64], Progress: 25.00%
+Epoch [5/10], Batch [17/64], Progress: 26.56%
+Epoch [5/10], Batch [18/64], Progress: 28.12%
+Epoch [5/10], Batch [19/64], Progress: 29.69%
+Epoch [5/10], Batch [20/64], Progress: 31.25%
+Epoch [5/10], Batch [21/64], Progress: 32.81%
+Epoch [5/10], Batch [22/64], Progress: 34.38%
+Epoch [5/10], Batch [23/64], Progress: 35.94%
+Epoch [5/10], Batch [24/64], Progress: 37.50%
+Epoch [5/10], Batch [25/64], Progress: 39.06%
+Epoch [5/10], Batch [26/64], Progress: 40.62%
+Epoch [5/10], Batch [27/64], Progress: 42.19%
+Epoch [5/10], Batch [28/64], Progress: 43.75%
+Epoch [5/10], Batch [29/64], Progress: 45.31%
+Epoch [5/10], Batch [30/64], Progress: 46.88%
+Epoch [5/10], Batch [31/64], Progress: 48.44%
+Epoch [5/10], Batch [32/64], Progress: 50.00%
+Epoch [5/10], Batch [33/64], Progress: 51.56%
+Epoch [5/10], Batch [34/64], Progress: 53.12%
+Epoch [5/10], Batch [35/64], Progress: 54.69%
+Epoch [5/10], Batch [36/64], Progress: 56.25%
+Epoch [5/10], Batch [37/64], Progress: 57.81%
+Epoch [5/10], Batch [38/64], Progress: 59.38%
+Epoch [5/10], Batch [39/64], Progress: 60.94%
+Epoch [5/10], Batch [40/64], Progress: 62.50%
+Epoch [5/10], Batch [41/64], Progress: 64.06%
+Epoch [5/10], Batch [42/64], Progress: 65.62%
+Epoch [5/10], Batch [43/64], Progress: 67.19%
+Epoch [5/10], Batch [44/64], Progress: 68.75%
+Epoch [5/10], Batch [45/64], Progress: 70.31%
+Epoch [5/10], Batch [46/64], Progress: 71.88%
+Epoch [5/10], Batch [47/64], Progress: 73.44%
+Epoch [5/10], Batch [48/64], Progress: 75.00%
+Epoch [5/10], Batch [49/64], Progress: 76.56%
+Epoch [5/10], Batch [50/64], Progress: 78.12%
+Epoch [5/10], Batch [51/64], Progress: 79.69%
+Epoch [5/10], Batch [52/64], Progress: 81.25%
+Epoch [5/10], Batch [53/64], Progress: 82.81%
+Epoch [5/10], Batch [54/64], Progress: 84.38%
+Epoch [5/10], Batch [55/64], Progress: 85.94%
+Epoch [5/10], Batch [56/64], Progress: 87.50%
+Epoch [5/10], Batch [57/64], Progress: 89.06%
+Epoch [5/10], Batch [58/64], Progress: 90.62%
+Epoch [5/10], Batch [59/64], Progress: 92.19%
+Epoch [5/10], Batch [60/64], Progress: 93.75%
+Epoch [5/10], Batch [61/64], Progress: 95.31%
+Epoch [5/10], Batch [62/64], Progress: 96.88%
+Epoch [5/10], Batch [63/64], Progress: 98.44%
+Epoch [5/10], Batch [64/64], Progress: 100.00%
++---------+--------------+------------------+-------------------+-----------------------+
+| Epoch   |   Train Loss | Train Accuracy   |   Validation Loss | Validation Accuracy   |
++=========+==============+==================+===================+=======================+
+| 5/10    |         1.41 | 52.36%           |              1.52 | 45.58%                |
++---------+--------------+------------------+-------------------+-----------------------+
+Epoch [6/10], Batch [1/64], Progress: 1.56%
+Epoch [6/10], Batch [2/64], Progress: 3.12%
+Epoch [6/10], Batch [3/64], Progress: 4.69%
+Epoch [6/10], Batch [4/64], Progress: 6.25%
+Epoch [6/10], Batch [5/64], Progress: 7.81%
+Epoch [6/10], Batch [6/64], Progress: 9.38%
+Epoch [6/10], Batch [7/64], Progress: 10.94%
+Epoch [6/10], Batch [8/64], Progress: 12.50%
+Epoch [6/10], Batch [9/64], Progress: 14.06%
+Epoch [6/10], Batch [10/64], Progress: 15.62%
+Epoch [6/10], Batch [11/64], Progress: 17.19%
+Epoch [6/10], Batch [12/64], Progress: 18.75%
+Epoch [6/10], Batch [13/64], Progress: 20.31%
+Epoch [6/10], Batch [14/64], Progress: 21.88%
+Epoch [6/10], Batch [15/64], Progress: 23.44%
+Epoch [6/10], Batch [16/64], Progress: 25.00%
+Epoch [6/10], Batch [17/64], Progress: 26.56%
+Epoch [6/10], Batch [18/64], Progress: 28.12%
+Epoch [6/10], Batch [19/64], Progress: 29.69%
+Epoch [6/10], Batch [20/64], Progress: 31.25%
+Epoch [6/10], Batch [21/64], Progress: 32.81%
+Epoch [6/10], Batch [22/64], Progress: 34.38%
+Epoch [6/10], Batch [23/64], Progress: 35.94%
+Epoch [6/10], Batch [24/64], Progress: 37.50%
+Epoch [6/10], Batch [25/64], Progress: 39.06%
+Epoch [6/10], Batch [26/64], Progress: 40.62%
+Epoch [6/10], Batch [27/64], Progress: 42.19%
+Epoch [6/10], Batch [28/64], Progress: 43.75%
+Epoch [6/10], Batch [29/64], Progress: 45.31%
+Epoch [6/10], Batch [30/64], Progress: 46.88%
+Epoch [6/10], Batch [31/64], Progress: 48.44%
+Epoch [6/10], Batch [32/64], Progress: 50.00%
+Epoch [6/10], Batch [33/64], Progress: 51.56%
+Epoch [6/10], Batch [34/64], Progress: 53.12%
+Epoch [6/10], Batch [35/64], Progress: 54.69%
+Epoch [6/10], Batch [36/64], Progress: 56.25%
+Epoch [6/10], Batch [37/64], Progress: 57.81%
+Epoch [6/10], Batch [38/64], Progress: 59.38%
+Epoch [6/10], Batch [39/64], Progress: 60.94%
+Epoch [6/10], Batch [40/64], Progress: 62.50%
+Epoch [6/10], Batch [41/64], Progress: 64.06%
+Epoch [6/10], Batch [42/64], Progress: 65.62%
+Epoch [6/10], Batch [43/64], Progress: 67.19%
+Epoch [6/10], Batch [44/64], Progress: 68.75%
+Epoch [6/10], Batch [45/64], Progress: 70.31%
+Epoch [6/10], Batch [46/64], Progress: 71.88%
+Epoch [6/10], Batch [47/64], Progress: 73.44%
+Epoch [6/10], Batch [48/64], Progress: 75.00%
+Epoch [6/10], Batch [49/64], Progress: 76.56%
+Epoch [6/10], Batch [50/64], Progress: 78.12%
+Epoch [6/10], Batch [51/64], Progress: 79.69%
+Epoch [6/10], Batch [52/64], Progress: 81.25%
+Epoch [6/10], Batch [53/64], Progress: 82.81%
+Epoch [6/10], Batch [54/64], Progress: 84.38%
+Epoch [6/10], Batch [55/64], Progress: 85.94%
+Epoch [6/10], Batch [56/64], Progress: 87.50%
+Epoch [6/10], Batch [57/64], Progress: 89.06%
+Epoch [6/10], Batch [58/64], Progress: 90.62%
+Epoch [6/10], Batch [59/64], Progress: 92.19%
+Epoch [6/10], Batch [60/64], Progress: 93.75%
+Epoch [6/10], Batch [61/64], Progress: 95.31%
+Epoch [6/10], Batch [62/64], Progress: 96.88%
+Epoch [6/10], Batch [63/64], Progress: 98.44%
+Epoch [6/10], Batch [64/64], Progress: 100.00%
++---------+--------------+------------------+-------------------+-----------------------+
+| Epoch   |   Train Loss | Train Accuracy   |   Validation Loss | Validation Accuracy   |
++=========+==============+==================+===================+=======================+
+| 6/10    |         1.36 | 52.90%           |              1.55 | 43.42%                |
++---------+--------------+------------------+-------------------+-----------------------+
+Epoch [7/10], Batch [1/64], Progress: 1.56%
+Epoch [7/10], Batch [2/64], Progress: 3.12%
+Epoch [7/10], Batch [3/64], Progress: 4.69%
+Epoch [7/10], Batch [4/64], Progress: 6.25%
+Epoch [7/10], Batch [5/64], Progress: 7.81%
+Epoch [7/10], Batch [6/64], Progress: 9.38%
+Epoch [7/10], Batch [7/64], Progress: 10.94%
+Epoch [7/10], Batch [8/64], Progress: 12.50%
+Epoch [7/10], Batch [9/64], Progress: 14.06%
+Epoch [7/10], Batch [10/64], Progress: 15.62%
+Epoch [7/10], Batch [11/64], Progress: 17.19%
+Epoch [7/10], Batch [12/64], Progress: 18.75%
+Epoch [7/10], Batch [13/64], Progress: 20.31%
+Epoch [7/10], Batch [14/64], Progress: 21.88%
+Epoch [7/10], Batch [15/64], Progress: 23.44%
+Epoch [7/10], Batch [16/64], Progress: 25.00%
+Epoch [7/10], Batch [17/64], Progress: 26.56%
+Epoch [7/10], Batch [18/64], Progress: 28.12%
+Epoch [7/10], Batch [19/64], Progress: 29.69%
+Epoch [7/10], Batch [20/64], Progress: 31.25%
+Epoch [7/10], Batch [21/64], Progress: 32.81%
+Epoch [7/10], Batch [22/64], Progress: 34.38%
+Epoch [7/10], Batch [23/64], Progress: 35.94%
+Epoch [7/10], Batch [24/64], Progress: 37.50%
+Epoch [7/10], Batch [25/64], Progress: 39.06%
+Epoch [7/10], Batch [26/64], Progress: 40.62%
+Epoch [7/10], Batch [27/64], Progress: 42.19%
+Epoch [7/10], Batch [28/64], Progress: 43.75%
+Epoch [7/10], Batch [29/64], Progress: 45.31%
+Epoch [7/10], Batch [30/64], Progress: 46.88%
+Epoch [7/10], Batch [31/64], Progress: 48.44%
+Epoch [7/10], Batch [32/64], Progress: 50.00%
+Epoch [7/10], Batch [33/64], Progress: 51.56%
+Epoch [7/10], Batch [34/64], Progress: 53.12%
+Epoch [7/10], Batch [35/64], Progress: 54.69%
+Epoch [7/10], Batch [36/64], Progress: 56.25%
+Epoch [7/10], Batch [37/64], Progress: 57.81%
+Epoch [7/10], Batch [38/64], Progress: 59.38%
+Epoch [7/10], Batch [39/64], Progress: 60.94%
+Epoch [7/10], Batch [40/64], Progress: 62.50%
+Epoch [7/10], Batch [41/64], Progress: 64.06%
+Epoch [7/10], Batch [42/64], Progress: 65.62%
+Epoch [7/10], Batch [43/64], Progress: 67.19%
+Epoch [7/10], Batch [44/64], Progress: 68.75%
+Epoch [7/10], Batch [45/64], Progress: 70.31%
+Epoch [7/10], Batch [46/64], Progress: 71.88%
+Epoch [7/10], Batch [47/64], Progress: 73.44%
+Epoch [7/10], Batch [48/64], Progress: 75.00%
+Epoch [7/10], Batch [49/64], Progress: 76.56%
+Epoch [7/10], Batch [50/64], Progress: 78.12%
+Epoch [7/10], Batch [51/64], Progress: 79.69%
+Epoch [7/10], Batch [52/64], Progress: 81.25%
+Epoch [7/10], Batch [53/64], Progress: 82.81%
+Epoch [7/10], Batch [54/64], Progress: 84.38%
+Epoch [7/10], Batch [55/64], Progress: 85.94%
+Epoch [7/10], Batch [56/64], Progress: 87.50%
+Epoch [7/10], Batch [57/64], Progress: 89.06%
+Epoch [7/10], Batch [58/64], Progress: 90.62%
+Epoch [7/10], Batch [59/64], Progress: 92.19%
+Epoch [7/10], Batch [60/64], Progress: 93.75%
+Epoch [7/10], Batch [61/64], Progress: 95.31%
+Epoch [7/10], Batch [62/64], Progress: 96.88%
+Epoch [7/10], Batch [63/64], Progress: 98.44%
+Epoch [7/10], Batch [64/64], Progress: 100.00%
++---------+--------------+------------------+-------------------+-----------------------+
+| Epoch   |   Train Loss | Train Accuracy   |   Validation Loss | Validation Accuracy   |
++=========+==============+==================+===================+=======================+
+| 7/10    |         1.31 | 54.62%           |              1.55 | 46.17%                |
++---------+--------------+------------------+-------------------+-----------------------+
+Epoch [8/10], Batch [1/64], Progress: 1.56%
+Epoch [8/10], Batch [2/64], Progress: 3.12%
+Epoch [8/10], Batch [3/64], Progress: 4.69%
+Epoch [8/10], Batch [4/64], Progress: 6.25%
+Epoch [8/10], Batch [5/64], Progress: 7.81%
+Epoch [8/10], Batch [6/64], Progress: 9.38%
+Epoch [8/10], Batch [7/64], Progress: 10.94%
+Epoch [8/10], Batch [8/64], Progress: 12.50%
+Epoch [8/10], Batch [9/64], Progress: 14.06%
+Epoch [8/10], Batch [10/64], Progress: 15.62%
+Epoch [8/10], Batch [11/64], Progress: 17.19%
+Epoch [8/10], Batch [12/64], Progress: 18.75%
+Epoch [8/10], Batch [13/64], Progress: 20.31%
+Epoch [8/10], Batch [14/64], Progress: 21.88%
+Epoch [8/10], Batch [15/64], Progress: 23.44%
+Epoch [8/10], Batch [16/64], Progress: 25.00%
+Epoch [8/10], Batch [17/64], Progress: 26.56%
+Epoch [8/10], Batch [18/64], Progress: 28.12%
+Epoch [8/10], Batch [19/64], Progress: 29.69%
+Epoch [8/10], Batch [20/64], Progress: 31.25%
+Epoch [8/10], Batch [21/64], Progress: 32.81%
+Epoch [8/10], Batch [22/64], Progress: 34.38%
+Epoch [8/10], Batch [23/64], Progress: 35.94%
+Epoch [8/10], Batch [24/64], Progress: 37.50%
+Epoch [8/10], Batch [25/64], Progress: 39.06%
+Epoch [8/10], Batch [26/64], Progress: 40.62%
+Epoch [8/10], Batch [27/64], Progress: 42.19%
+Epoch [8/10], Batch [28/64], Progress: 43.75%
+Epoch [8/10], Batch [29/64], Progress: 45.31%
+Epoch [8/10], Batch [30/64], Progress: 46.88%
+Epoch [8/10], Batch [31/64], Progress: 48.44%
+Epoch [8/10], Batch [32/64], Progress: 50.00%
+Epoch [8/10], Batch [33/64], Progress: 51.56%
+Epoch [8/10], Batch [34/64], Progress: 53.12%
+Epoch [8/10], Batch [35/64], Progress: 54.69%
+Epoch [8/10], Batch [36/64], Progress: 56.25%
+Epoch [8/10], Batch [37/64], Progress: 57.81%
+Epoch [8/10], Batch [38/64], Progress: 59.38%
+Epoch [8/10], Batch [39/64], Progress: 60.94%
+Epoch [8/10], Batch [40/64], Progress: 62.50%
+Epoch [8/10], Batch [41/64], Progress: 64.06%
+Epoch [8/10], Batch [42/64], Progress: 65.62%
+Epoch [8/10], Batch [43/64], Progress: 67.19%
+Epoch [8/10], Batch [44/64], Progress: 68.75%
+Epoch [8/10], Batch [45/64], Progress: 70.31%
+Epoch [8/10], Batch [46/64], Progress: 71.88%
+Epoch [8/10], Batch [47/64], Progress: 73.44%
+Epoch [8/10], Batch [48/64], Progress: 75.00%
+Epoch [8/10], Batch [49/64], Progress: 76.56%
+Epoch [8/10], Batch [50/64], Progress: 78.12%
+Epoch [8/10], Batch [51/64], Progress: 79.69%
+Epoch [8/10], Batch [52/64], Progress: 81.25%
+Epoch [8/10], Batch [53/64], Progress: 82.81%
+Epoch [8/10], Batch [54/64], Progress: 84.38%
+Epoch [8/10], Batch [55/64], Progress: 85.94%
+Epoch [8/10], Batch [56/64], Progress: 87.50%
+Epoch [8/10], Batch [57/64], Progress: 89.06%
+Epoch [8/10], Batch [58/64], Progress: 90.62%
+Epoch [8/10], Batch [59/64], Progress: 92.19%
+Epoch [8/10], Batch [60/64], Progress: 93.75%
+Epoch [8/10], Batch [61/64], Progress: 95.31%
+Epoch [8/10], Batch [62/64], Progress: 96.88%
+Epoch [8/10], Batch [63/64], Progress: 98.44%
+Epoch [8/10], Batch [64/64], Progress: 100.00%
++---------+--------------+------------------+-------------------+-----------------------+
+| Epoch   |   Train Loss | Train Accuracy   |   Validation Loss | Validation Accuracy   |
++=========+==============+==================+===================+=======================+
+| 8/10    |         1.31 | 55.06%           |              1.58 | 43.61%                |
++---------+--------------+------------------+-------------------+-----------------------+
+Epoch [9/10], Batch [1/64], Progress: 1.56%
+Epoch [9/10], Batch [2/64], Progress: 3.12%
+Epoch [9/10], Batch [3/64], Progress: 4.69%
+Epoch [9/10], Batch [4/64], Progress: 6.25%
+Epoch [9/10], Batch [5/64], Progress: 7.81%
+Epoch [9/10], Batch [6/64], Progress: 9.38%
+Epoch [9/10], Batch [7/64], Progress: 10.94%
+Epoch [9/10], Batch [8/64], Progress: 12.50%
+Epoch [9/10], Batch [9/64], Progress: 14.06%
+Epoch [9/10], Batch [10/64], Progress: 15.62%
+Epoch [9/10], Batch [11/64], Progress: 17.19%
+Epoch [9/10], Batch [12/64], Progress: 18.75%
+Epoch [9/10], Batch [13/64], Progress: 20.31%
+Epoch [9/10], Batch [14/64], Progress: 21.88%
+Epoch [9/10], Batch [15/64], Progress: 23.44%
+Epoch [9/10], Batch [16/64], Progress: 25.00%
+Epoch [9/10], Batch [17/64], Progress: 26.56%
+Epoch [9/10], Batch [18/64], Progress: 28.12%
+Epoch [9/10], Batch [19/64], Progress: 29.69%
+Epoch [9/10], Batch [20/64], Progress: 31.25%
+Epoch [9/10], Batch [21/64], Progress: 32.81%
+Epoch [9/10], Batch [22/64], Progress: 34.38%
+Epoch [9/10], Batch [23/64], Progress: 35.94%
+Epoch [9/10], Batch [24/64], Progress: 37.50%
+Epoch [9/10], Batch [25/64], Progress: 39.06%
+Epoch [9/10], Batch [26/64], Progress: 40.62%
+Epoch [9/10], Batch [27/64], Progress: 42.19%
+Epoch [9/10], Batch [28/64], Progress: 43.75%
+Epoch [9/10], Batch [29/64], Progress: 45.31%
+Epoch [9/10], Batch [30/64], Progress: 46.88%
+Epoch [9/10], Batch [31/64], Progress: 48.44%
+Epoch [9/10], Batch [32/64], Progress: 50.00%
+Epoch [9/10], Batch [33/64], Progress: 51.56%
+Epoch [9/10], Batch [34/64], Progress: 53.12%
+Epoch [9/10], Batch [35/64], Progress: 54.69%
+Epoch [9/10], Batch [36/64], Progress: 56.25%
+Epoch [9/10], Batch [37/64], Progress: 57.81%
+Epoch [9/10], Batch [38/64], Progress: 59.38%
+Epoch [9/10], Batch [39/64], Progress: 60.94%
+Epoch [9/10], Batch [40/64], Progress: 62.50%
+Epoch [9/10], Batch [41/64], Progress: 64.06%
+Epoch [9/10], Batch [42/64], Progress: 65.62%
+Epoch [9/10], Batch [43/64], Progress: 67.19%
+Epoch [9/10], Batch [44/64], Progress: 68.75%
+Epoch [9/10], Batch [45/64], Progress: 70.31%
+Epoch [9/10], Batch [46/64], Progress: 71.88%
+Epoch [9/10], Batch [47/64], Progress: 73.44%
+Epoch [9/10], Batch [48/64], Progress: 75.00%
+Epoch [9/10], Batch [49/64], Progress: 76.56%
+Epoch [9/10], Batch [50/64], Progress: 78.12%
+Epoch [9/10], Batch [51/64], Progress: 79.69%
+Epoch [9/10], Batch [52/64], Progress: 81.25%
+Epoch [9/10], Batch [53/64], Progress: 82.81%
+Epoch [9/10], Batch [54/64], Progress: 84.38%
+Epoch [9/10], Batch [55/64], Progress: 85.94%
+Epoch [9/10], Batch [56/64], Progress: 87.50%
+Epoch [9/10], Batch [57/64], Progress: 89.06%
+Epoch [9/10], Batch [58/64], Progress: 90.62%
+Epoch [9/10], Batch [59/64], Progress: 92.19%
+Epoch [9/10], Batch [60/64], Progress: 93.75%
+Epoch [9/10], Batch [61/64], Progress: 95.31%
+Epoch [9/10], Batch [62/64], Progress: 96.88%
+Epoch [9/10], Batch [63/64], Progress: 98.44%
+Epoch [9/10], Batch [64/64], Progress: 100.00%
++---------+--------------+------------------+-------------------+-----------------------+
+| Epoch   |   Train Loss | Train Accuracy   |   Validation Loss | Validation Accuracy   |
++=========+==============+==================+===================+=======================+
+| 9/10    |         1.26 | 57.18%           |              1.54 | 45.97%                |
++---------+--------------+------------------+-------------------+-----------------------+
+Epoch [10/10], Batch [1/64], Progress: 1.56%
+Epoch [10/10], Batch [2/64], Progress: 3.12%
+Epoch [10/10], Batch [3/64], Progress: 4.69%
+Epoch [10/10], Batch [4/64], Progress: 6.25%
+Epoch [10/10], Batch [5/64], Progress: 7.81%
+Epoch [10/10], Batch [6/64], Progress: 9.38%
+Epoch [10/10], Batch [7/64], Progress: 10.94%
+Epoch [10/10], Batch [8/64], Progress: 12.50%
+Epoch [10/10], Batch [9/64], Progress: 14.06%
+Epoch [10/10], Batch [10/64], Progress: 15.62%
+Epoch [10/10], Batch [11/64], Progress: 17.19%
+Epoch [10/10], Batch [12/64], Progress: 18.75%
+Epoch [10/10], Batch [13/64], Progress: 20.31%
+Epoch [10/10], Batch [14/64], Progress: 21.88%
+Epoch [10/10], Batch [15/64], Progress: 23.44%
+Epoch [10/10], Batch [16/64], Progress: 25.00%
+Epoch [10/10], Batch [17/64], Progress: 26.56%
+Epoch [10/10], Batch [18/64], Progress: 28.12%
+Epoch [10/10], Batch [19/64], Progress: 29.69%
+Epoch [10/10], Batch [20/64], Progress: 31.25%
+Epoch [10/10], Batch [21/64], Progress: 32.81%
+Epoch [10/10], Batch [22/64], Progress: 34.38%
+Epoch [10/10], Batch [23/64], Progress: 35.94%
+Epoch [10/10], Batch [24/64], Progress: 37.50%
+Epoch [10/10], Batch [25/64], Progress: 39.06%
+Epoch [10/10], Batch [26/64], Progress: 40.62%
+Epoch [10/10], Batch [27/64], Progress: 42.19%
+Epoch [10/10], Batch [28/64], Progress: 43.75%
+Epoch [10/10], Batch [29/64], Progress: 45.31%
+Epoch [10/10], Batch [30/64], Progress: 46.88%
+Epoch [10/10], Batch [31/64], Progress: 48.44%
+Epoch [10/10], Batch [32/64], Progress: 50.00%
+Epoch [10/10], Batch [33/64], Progress: 51.56%
+Epoch [10/10], Batch [34/64], Progress: 53.12%
+Epoch [10/10], Batch [35/64], Progress: 54.69%
+Epoch [10/10], Batch [36/64], Progress: 56.25%
+Epoch [10/10], Batch [37/64], Progress: 57.81%
+Epoch [10/10], Batch [38/64], Progress: 59.38%
+Epoch [10/10], Batch [39/64], Progress: 60.94%
+Epoch [10/10], Batch [40/64], Progress: 62.50%
+Epoch [10/10], Batch [41/64], Progress: 64.06%
+Epoch [10/10], Batch [42/64], Progress: 65.62%
+Epoch [10/10], Batch [43/64], Progress: 67.19%
+Epoch [10/10], Batch [44/64], Progress: 68.75%
+Epoch [10/10], Batch [45/64], Progress: 70.31%
+Epoch [10/10], Batch [46/64], Progress: 71.88%
+Epoch [10/10], Batch [47/64], Progress: 73.44%
+Epoch [10/10], Batch [48/64], Progress: 75.00%
+Epoch [10/10], Batch [49/64], Progress: 76.56%
+Epoch [10/10], Batch [50/64], Progress: 78.12%
+Epoch [10/10], Batch [51/64], Progress: 79.69%
+Epoch [10/10], Batch [52/64], Progress: 81.25%
+Epoch [10/10], Batch [53/64], Progress: 82.81%
+Epoch [10/10], Batch [54/64], Progress: 84.38%
+Epoch [10/10], Batch [55/64], Progress: 85.94%
+Epoch [10/10], Batch [56/64], Progress: 87.50%
+Epoch [10/10], Batch [57/64], Progress: 89.06%
+Epoch [10/10], Batch [58/64], Progress: 90.62%
+Epoch [10/10], Batch [59/64], Progress: 92.19%
+Epoch [10/10], Batch [60/64], Progress: 93.75%
+Epoch [10/10], Batch [61/64], Progress: 95.31%
+Epoch [10/10], Batch [62/64], Progress: 96.88%
+Epoch [10/10], Batch [63/64], Progress: 98.44%
+Epoch [10/10], Batch [64/64], Progress: 100.00%
++---------+--------------+------------------+-------------------+-----------------------+
+| Epoch   |   Train Loss | Train Accuracy   |   Validation Loss | Validation Accuracy   |
++=========+==============+==================+===================+=======================+
+| 10/10   |         1.27 | 56.24%           |              1.56 | 48.53%                |
 +---------+--------------+------------------+-------------------+-----------------------+
 +---------+--------------+------------------+-------------------+-----------------------+
 | Epoch   |   Train Loss | Train Accuracy   |   Validation Loss | Validation Accuracy   |
 +=========+==============+==================+===================+=======================+
-| 1/1     |         2.05 | 30.24%           |              1.76 | 41.45%                |
+| 1/10    |         2.06 | 29.30%           |              1.79 | 39.49%                |
 +---------+--------------+------------------+-------------------+-----------------------+
-Epoch [1/1], Batch [1/64], Progress: 1.56%
-Epoch [1/1], Batch [2/64], Progress: 3.12%
-Epoch [1/1], Batch [3/64], Progress: 4.69%
-Epoch [1/1], Batch [4/64], Progress: 6.25%
-Epoch [1/1], Batch [5/64], Progress: 7.81%
+| 2/10    |         1.68 | 42.13%           |              1.64 | 43.22%                |
++---------+--------------+------------------+-------------------+-----------------------+
+| 3/10    |         1.55 | 46.61%           |              1.61 | 42.04%                |
++---------+--------------+------------------+-------------------+-----------------------+
+| 4/10    |         1.47 | 48.33%           |              1.55 | 48.33%                |
++---------+--------------+------------------+-------------------+-----------------------+
+| 5/10    |         1.41 | 52.36%           |              1.52 | 45.58%                |
++---------+--------------+------------------+-------------------+-----------------------+
+| 6/10    |         1.36 | 52.90%           |              1.55 | 43.42%                |
++---------+--------------+------------------+-------------------+-----------------------+
+| 7/10    |         1.31 | 54.62%           |              1.55 | 46.17%                |
++---------+--------------+------------------+-------------------+-----------------------+
+| 8/10    |         1.31 | 55.06%           |              1.58 | 43.61%                |
++---------+--------------+------------------+-------------------+-----------------------+
+| 9/10    |         1.26 | 57.18%           |              1.54 | 45.97%                |
++---------+--------------+------------------+-------------------+-----------------------+
+| 10/10   |         1.27 | 56.24%           |              1.56 | 48.53%                |
++---------+--------------+------------------+-------------------+-----------------------+
